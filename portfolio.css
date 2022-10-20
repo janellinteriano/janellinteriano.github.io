@@ -63,13 +63,13 @@ p:hover {
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
 .center:hover {
-    transition: transform 2s; /*This makes the transform effect last 2 seconds */
+    transition: transform 1s; /*This makes the transform effect last 2 seconds */
     transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
 /*Anchor Elements*/
 a {
-    color: #9370DB; /*This ensures all links are blue*/
+    color: #BC8F8F; /*This ensures all links are blue*/
     cursor: pointer;
     text-decoration: underline;
 }
@@ -106,7 +106,7 @@ img:hover {
 /* Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
+    background-color: #FAF0E6;
 }
 
 /***** END OF GENERAL STYLING *****/
@@ -114,7 +114,7 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: #E6E6FA; /* This colors the navbar black */
+    background-color: #FFE4E1; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
@@ -133,7 +133,7 @@ footer {
 .Navbar a {
     float: left; /* This specifies that the text floats on the left on the navbar */
     display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
-    color: black; /* This is the font color for text on our navbar */
+    color: #696969; /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font: Georgia; /* This specifies the font family for text on our navbar */
@@ -160,11 +160,11 @@ footer {
 
 /* Navbar hover effects */
 .Navbar a:hover {
-    background-color: #9370DB; /* Defines the background color that will display when you hover over the link */
-    color: #F8F8FF; /* This defines the font color that will display when navbar a elements are hovered over */
+    background-color: #BC8F8F; /* Defines the background color that will display when you hover over the link */
+    color: #FAF0E6; /* This defines the font color that will display when navbar a elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     cursor: pointer;
-    transition: 0.5s ease-in;
+    
 }
 
 /***** END OF NAVBAR STYLING *****/
@@ -243,7 +243,7 @@ footer {
     top: 50%; /* This moves the buttons up in the slideshow container */
     width: auto; /* The width of the buttons is automatically adjusted based on the content */
     padding: 3vw; /* Adds padding equal to 2% of the viewport width */
-    color: #9370DB;
+    color: #FFB6C1;
     font-weight: bold;
     font-size: w.5vw;
     border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
@@ -300,15 +300,6 @@ footer {
     -webkit-animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-    from {opacity: .4;} /* Image starts transparent */
-    to {opacity: 1;} /* Image ends opaque */
-}
-
-@keyframes fade {
-    from {opacity: .4;} /* Image starts transparent */
-    to {opacity: 1;} /* Image ends opaque */
-}
 /***** End Slideshow Styling *****/
 
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
@@ -322,7 +313,7 @@ footer {
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #F8F8FF; /* Sets the background color of the columns with class Column_1 */
+    background-color: #FFE4E1; /* Sets the background color of the columns with class Column_1 */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -339,7 +330,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 450px;
-    background-color: #E6E6FA;
+    background-color: #BC8F8F;
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -365,8 +356,8 @@ footer {
     bottom: 1.75vw;
     right: 1.75vw;
     width: 25vw;
-    background-color: #E6E6FA;
-    color: #9370DB;
+    background-color: #FAF0E6;
+    color: black;
     border: solid black; /* This makes a solid black border around the button */
     cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
     -webkit-animation: movePopup 5s; /* Animation for 5 seconds for Safari 4.0-8.0 */
@@ -396,7 +387,7 @@ footer {
 .form-container {
     max-width: 49vw; /* Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
-    background-color: white;
+    background-color: lightgray;
 }
 
 /* Input fields */
@@ -405,7 +396,7 @@ footer {
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
     border: none;
-    background: rgba(88, 10, 166, 0.144);
+    background: white;
     font-size: 1vw;
 }
 
@@ -425,42 +416,42 @@ button {
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
     color: black;
-    background-color: rgba(142, 117, 199, 0.253);
+    background-color: #D3D3D3;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
-    border-color: #9370DB;
+    border-color: black;
 }
 
 /* Submit button */
 .form-container .btn {
     background-color: white; /* Sets the background color of the submit button */
-    color: indigo; /* Sets the font color of the Submit button*/
+    color: #BC8F8F; /* Sets the font color of the Submit button*/
     border-color: silver;
     margin-bottom: 1vh;
 }
 
 .form-container .btn:hover {
-    background-color: #E6E6FA;
-    color: #9370DB;
+    background-color: #BC8F8F;
+    color: white;
     transform: scale(1); /* Makes the button increase 1.5 times in size */
     transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
-    border-color: black;
+    border-color: silver;
 }
 
 /* Close button */
 .form-container .cancel {
     background-color: white;
-    color: indigo;
+    color: #BC8F8F;
     border-color: silver;
 }
 
 /* Hover effect for button */
 .form-container .cancel:hover {
-    background-color: #E6E6FA; /* Turns the background of the submit button white when the user hovers over it */
-    color: #9370DB; /* Turns the font black when hovered over */
+    background-color: #BC8F8F; /* Turns the background of the submit button white when the user hovers over it */
+    color: white; /* Turns the font black when hovered over */
     transform: scale(1); /* Makes the button increase 1.5 times in size */
     transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
-    border-color: black;
+    border-color: silver;
 }
 
 /***** End of Contact Form Styling *****/
