@@ -14,149 +14,64 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
-            <a href = "#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <!-- Onclick and ondblclick functions added to open and close the contact form -->
-            <a onclick = "openForm()" ondblclick="closeForm()" class = "contact">Contact</a>
+            <a href="#Contact">Contact</a>
         </div>
        
-        <!--Background video-->
-        <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
-            <source src="./videos/typing.mp4" type="video/mp4">
-            <!--Display message if video fails to run-->
-            Your browser does not support HTML5 video.
-        </video>
-        </div>
-
-        <!--Video text-->
-        <div class="Video_Text">
-            <h1 class="white-text">Janell Interiano's Portfolio</h1>
+        
             <strong>
+            <div class="Row" id="Home">
                 <p class="center">
+                    <img class="img-container" src="images/me.jpg" alt="me">
+                    <br>Janell Interiano // Software Developer // Georgia<br><br><br>
                     <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
                         <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
                         <br>field of battle and to command such unswervingly dutiful actors or troops.  
                     </q>
                     <br> -Joseph Weizenbaum
-                    <br>
-                    <br>My name is Janell Interiano. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br>Thank you for stopping by and enjoy!
                 </p>
-            </strong>
-        </div>
-
-        <!--Slideshow section added-->
-        <div id = "Slideshow">
-            <div id = "Slideshow_Background">
-                <div id = "Slideshow_Container">
-                    <!--Slide 1 of 6-->
-                    <div class = "mySlides fade">
-                        <img class = "Slideshow_Images" src = "./me.jpg" alt = "picture of me">
-                        <div class = "text">I'm available to assist you on your project!</div>
-                    </div>
-                    <!--Slide 2 of 6-->
-                    <div class = "mySlides fade">
-                        <img class = "Slideshow_Images" src = "./images/htmllogos.png" alt="HTML, CSS, and JavaScript logos">
-                        <div class = "text">I am a full-stack software developer, <br> trained in: <br>HTML, CSS, and JavaScript,</div>
-                    </div>
-                    <!--Slide 3 of 6-->
-                    <div class = "mySlides fade">
-                        <img class = "Slideshow_Images" src = "./images/python.png" alt = "Python logo">
-                        <div class = "text">the popular programming language Python,</div>
-                    </div>
-                    <!--Slide 4 of 6-->
-                    <div class = "mySlides fade">
-                        <img class = "Slideshow_Images" src = "./images/asp.png" alt = "C# logo">
-                        <div class = "text">C#, .NET Framework, ASP.NET, MVC, </div>
-                    </div>
-                    <!--Slide 5 of 6-->
-                    <div class = "mySlides fade">
-                        <img class = "Slideshow_Images" src = "./images/sql.jpg" alt = "SQL logo">
-                        <div class = "text">back end development, databases and SQL.</div>
-                    </div>
-                    <!--Slide 6 of 6-->
-                    <div class = "mySlides fade">
-                        <img class = "Slideshow_Images" src = "./images/email.png" alt = "picture of your choosing">
-                        <div class = "text">Contact me now!</div>
-                    </div>
-                    <!-- Previous and next buttons -->
-                    <a class = "Previous" onclick = "plusSlides(-1)">&#10094;</a>
-                    <a class = "Next" onclick = "plusSlides(1)">&#10095;</a>
-                    </div><br>
-                    <!--Slideshow dots (these are another way for users to navigate through the slideshow)-->
-                    <div style = "text-align: center;">
-                        <span class = "dot" onclick = "currentSlide(1)"></span>
-                        <span class = "dot" onclick = "currentSlide(2)"></span>
-                        <span class = "dot" onclick = "currentSlide(3)"></span>
-                        <span class = "dot" onclick = "currentSlide(4)"></span>
-                        <span class = "dot" onclick = "currentSlide(5)"></span>
-                        <span class = "dot" onclick = "currentSlide(6)"></span>
-                    </div>
-                </div>
             </div>
-        </div>
+            </strong>
+
+    
 
         <!--About section-->
         <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="./images/codinglaptop.jpg" alt="coding laptop">
-            </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
+            <div class="center">
+                <h1>About Me</h1>
                 <p>
-                    I'm a software developer who loves to code! I enjoy spending time with my family and working on arts and crafts.
+                    I'm a girl who loves to code!<br>I am a student at the Tech Academy, and I'm currently attending the Software Development boot camp!<br>I am trained and experienced in web and programming languages such as: HTML, CSS, JavaScript, SQL, Python, C# and more.<br>
+                    I enjoy spending time with my family and friends, and I love working on arts and crafts in my free time. 
                     <br>
-                    <br>I am a student of <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Development Bootcamp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, , Python, C# and more.
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <br>I'd love to join you on your next project!
                 </p>
+                <br>
+                <img class="img-container1" src="images/codinglaptop.jpg" alt="laptop">
             </div>
         </div>
 
         <!--GitHub section-->
         <div class="Row" id="GitHub">
             <!--Left column-->
-            <div class="Column_1">
+            <div class="center">
                 <h1>GitHub</h1>
                 <p>
                     You can view my coding projects on my GitHub profile here:
-                    <br>
                     <p class="center"><a href="https://github.com/janellinteriano" target="_blank">My GitHub</a></p>
+                    <img class="img-container2" src="images/GitHub.png" alt="github logo">
                 </p>
+                <br><br><br>
             </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://github.com/janellinteriano" target="_blank"><img src="./images/GitHub.png" alt="GitHub logo"></a>
-            </div>
-        </div>
 
-        <!--Contact section-->
-        <div id="Contact">
-            <button onclick="openForm()" class = "Pop_Up_Button">CONTACT</button>
-            <div class = "form-popup" id = "myForm">
-                <form action = "https://formspree.io/info@learncodinganywhere.com" method = "POST" class = "form-container">
-                    <!--Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing 
-                        - note: it will not run unless live on the internet, you have to push it to your online website first-->
-                    <h1>Contact</h1>
-                    <label for = "name"><b>Name</b></label>
-                    <input type = "text" placeholder = "Type your name here" name = "name" required>
-                    <label for= "phone"><b>Phone</b></label>
-                    <input type = "text" placeholder = "Type your phone number here" name = "phone">
-                    <label for = "email"><b>Email</b></label>
-                    <input type = "text" placeholder = "Type your email address here" name = "email" required>
-                    <label for = "message"><b>Message</b></label>
-                    <input type = "text" placeholder = "Type your message here" name = "message">
-
-                    <button type = "submit" class = "btn">SUBMIT</button>
-                    <button type = "button" class = "btn cancel" onclick = "closeForm()">CLOSE</button>
-                </form>
-            </div>
-        </div>
+            <div class="Row" id="Contact">
+                <!--Left column-->
+                <div class="center">
+                    <h1>Contact Me</h1>
+                        <p class="center">Email:<br>janellinteriano@gmail.com</p>
+                            <p class="center"><a href="https://www.linkedin.com/in/janell-interiano-672134218/" target="_blank" alt="github link"><br>My LinkedIn Profile</a></p>
+                    <br><br><br>
+                </div>
 
         <!--Footer section-->
         <footer>
