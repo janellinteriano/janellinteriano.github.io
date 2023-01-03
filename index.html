@@ -12,42 +12,60 @@
     <body class="Background">
 
         <!--Navbar-->
-        <div class="Navbar">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10048;</a>
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
             <a href="#Contact">Contact</a>
-        </div>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+          </div>
        
-        
-            <strong>
-            <div class="Row" id="Home">
-                <p class="center">
-                    <img class="img-container" src="images/me.jpg" alt="me">
-                    <br>Janell Interiano // Software Developer // Georgia<br><br><br>
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.  
-                    </q>
-                    <br> -Joseph Weizenbaum
-                </p>
+            <div class="header-row" id="Home">
+                <img src="./images/JI.png" alt="my initials" class="img-container">
+                <div class="header">
+                    <h2>Hi, my name is Janell Interiano!</h2>
+                    <h3>I am a full-stack developer based in Austell, Georgia</h3>
+                </div> 
             </div>
+        
+            
+            <!--Quote Section-->
+            <div class="quote">
+            <strong>
+            <q>Believe you can and you're halfway there.
+            </q>
+            <br> —Theodore Roosevelt
             </strong>
-
-    
+            </div>  
+        <!--End of quote section-->
 
         <!--About section-->
         <div class="Row" id="About">
             <div class="center">
-                <h1>About Me</h1>
                 <p>
-                    I'm a girl who loves to code!<br>I am a student at the Tech Academy, and I'm currently attending the Software Development boot camp!<br>I am trained and experienced in web and programming languages such as: HTML, CSS, JavaScript, SQL, Python, C# and more.<br>
-                    I enjoy spending time with my family and friends, and I love working on arts and crafts in my free time. 
+                    <br><br>
+                    I'm a girl who is passionate about coding!<br>I am currently a student at the Tech Academy, attending the Software Development boot camp!
+                    <br>I am trained and experienced in languages such as: HTML, CSS, JavaScript, SQL, Python, C# and more.<br>
+                    I enjoy spending my free time with family and friends, and I love playing video games.
                     <br>
                     <br>I'd love to join you on your next project!
                 </p>
                 <br>
-                <img class="img-container1" src="images/codinglaptop.jpg" alt="laptop">
+                <div class="wrapper">
+                <img class="mySlides" src="./images/htmllogos.png">
+                <img class="mySlides" src="./images/python.png">
+                <img class="mySlides" src="./images/sql.jpg">
+                <img class="mySlides" src="./images/csharp.png" style="width: 400px; height: 400px;">
+                </div>
+                <div class="buttons">
+                <button class="button-left" onclick="plusDivs(-1)">&#8606;</button>
+                <button class="button-right" onclick="plusDivs(+1)">&#8608;</button>
+                </div>
+                <br><br>
             </div>
         </div>
 
@@ -55,23 +73,42 @@
         <div class="Row" id="GitHub">
             <!--Left column-->
             <div class="center">
-                <h1>GitHub</h1>
                 <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <p class="center"><a href="https://github.com/janellinteriano" target="_blank">My GitHub</a></p>
-                    <img class="img-container2" src="images/GitHub.png" alt="github logo">
+                    <br><br>
+                    View my coding projects on my GitHub<br>
+                    &#8609; <br><br>
+                    <a href="https://github.com/janellinteriano" target="_blank"><img class="img-container2" src="images/GitHub.png" alt="github logo"></a>
+                    
                 </p>
                 <br><br><br>
             </div>
 
-            <div class="Row" id="Contact">
+            <div class="Row contact-form" id="Contact">
                 <!--Left column-->
-                <div class="center">
-                    <h1>Contact Me</h1>
-                        <p class="center">Email:<br>janellinteriano@gmail.com</p>
-                            <p class="center"><a href="https://www.linkedin.com/in/janell-interiano-672134218/" target="_blank" alt="github link"><br>My LinkedIn Profile</a></p>
-                    <br><br><br>
+                <!-- modify this form HTML and place wherever you want your form -->
+                <div class="contact-form-container">
+                    <form
+                        action="https://formspree.io/f/mkneookp"
+                        method="POST"
+                    >
+                    <h4>Get in Touch With Me!</h4>
+                    <label class="email">
+                    Email Address:<br>
+                    </label>
+                    <input type="email" name="email" placeholder="Please enter your email">
+                    
+                    <br>
+                    <label class="message">
+                    Message:<br>
+                    </label>
+                    <textarea name="message" placeholder="Please enter your message"></textarea>
+                    <br>
+                    <!-- your other form fields go here -->
+                    <button class="form-button" type="submit">Submit</button>
+                    </form>
                 </div>
+            </div>
+            <br><br>
 
         <!--Footer section-->
         <footer>
