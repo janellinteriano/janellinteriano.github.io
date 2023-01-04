@@ -58,8 +58,12 @@ h1:hover {
 .quote {
     margin: auto;
     text-align: center;
-    margin-bottom: 30%;
+    margin-bottom: 25%;
     font-size: 30px;
+}
+
+.fade-in {
+    opacity: 0;
 }
 
 /* Paragraph elements */
@@ -91,6 +95,8 @@ h3 {
 h4 {
     font-size: 28px;
     margin-top: -20%;
+    color:rgba(0, 0, 0, 0.811);
+    text-shadow: 1px 1px #e5d3c6;
 }
 
 .header-row {
@@ -111,9 +117,26 @@ h4 {
 }
 
 .img-container2 {
-    width: 300px;
+    width: 170px;
     height: auto;
     margin-bottom: 20%;
+}
+
+.img-container3 {
+    width: 475px;
+    height: auto;
+    margin-bottom: 20%;
+}
+
+li {
+    font-size: 18px;
+    width: 300px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.pizza {
+    font-size: 35px;
 }
 
 /* Center class - this applies to all elements with the class "center" */
@@ -169,7 +192,15 @@ img {
 /* Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: #d8bfd8;
+    background-color:rgba(133, 90, 113, 0.811);
+}
+
+footer .center {
+    color: white;
+}
+
+.footer-link {
+    color:rgba(56, 34, 46, 0.811);
 }
 
 /***** END OF GENERAL STYLING *****/
@@ -323,10 +354,12 @@ button:hover {
     background-color:#fff5ee;
     color:rgb(144, 110, 110);
     border: 1.5px solid dimgray;
+    border-radius: 5px;
     width: 75px;
     cursor: pointer;
     margin: auto;
     font-size: 15px;
+    font-family: 'Garamond';
 }
 
 .form-button:hover {
@@ -346,6 +379,7 @@ button:hover {
     border: dimgray 2px solid;
     border-radius: 15px;
     margin-bottom: 10%;
+    font-family: 'Garamond';
 }
 
 .contact-form-container {
@@ -355,11 +389,14 @@ button:hover {
     padding-top: 30%;
     text-align: center;
     background-color: rgba(133, 90, 113, 0.811);
+    border-radius: 15px;
+    font-family: 'Garamond';
 }
 
 input, textarea{
     border: solid 2px dimgray;
     border-radius: 3px;
+    border-color:rgba(56, 34, 46, 0.811);
     width: 250px;
     margin-bottom: 10px;
 }
@@ -385,6 +422,10 @@ textarea {
 
 .message {
     margin-left: -42%;
+}
+
+::placeholder{
+    color:rgb(123, 97, 123)
 }
 
 

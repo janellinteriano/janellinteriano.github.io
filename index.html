@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>Janell Interiano</title>
         <link rel="stylesheet" type="text/css" href="./portfolio.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </head>
 
     <!--Body-->
@@ -34,7 +35,7 @@
         
             
             <!--Quote Section-->
-            <div class="quote">
+            <div class="quote fade-in">
             <strong>
             <q>Believe you can and you're halfway there.
             </q>
@@ -46,7 +47,7 @@
         <!--About section-->
         <div class="Row" id="About">
             <div class="center">
-                <p>
+                <p class="fade-in">
                     <br><br>
                     I'm a girl who is passionate about coding!<br>I am currently a student at the Tech Academy, attending the Software Development boot camp!
                     <br>I am trained and experienced in languages such as: HTML, CSS, JavaScript, SQL, Python, C# and more.<br>
@@ -65,7 +66,6 @@
                 <button class="button-left" onclick="plusDivs(-1)">&#8606;</button>
                 <button class="button-right" onclick="plusDivs(+1)">&#8608;</button>
                 </div>
-                <br><br>
             </div>
         </div>
 
@@ -73,13 +73,27 @@
         <div class="Row" id="GitHub">
             <!--Left column-->
             <div class="center">
-                <p>
-                    <br><br>
+                <p class="fade-in">
+                    
                     View my coding projects on my GitHub<br>
                     &#8609; <br><br>
-                    <a href="https://github.com/janellinteriano" target="_blank"><img class="img-container2" src="images/GitHub.png" alt="github logo"></a>
-                    
                 </p>
+                    <a href="https://github.com/janellinteriano" target="_blank"><img class="img-container2" src="images/GitHub.png" alt="github logo"></a>
+                <br>
+            </div>
+
+        <div class="Row">
+            <!--Left column-->
+            <div class="center">
+                <p class="fade-in pizza">
+                    <br><br>
+                    One of my Favorite Projects<br>
+                    <ul>
+                        <li>a simple menu that is used to order pizza with a various selection of toppings. It then takes the input information and calculates the total price for the order.</li>
+                    </ul>
+                
+                </p>
+                    <a href="https://github.com/janellinteriano/JavaScript-Projects/tree/main/Pizza_Project" target="_blank"><img class="img-container3" src="images//pizzaproject.png" alt="pizza project"></a>
                 <br><br><br>
             </div>
 
@@ -95,13 +109,13 @@
                     <label class="email">
                     Email Address:<br>
                     </label>
-                    <input type="email" name="email" placeholder="Please enter your email">
+                    <input type="email" name="email" placeholder="Please enter your email &#10048;">
                     
                     <br>
                     <label class="message">
                     Message:<br>
                     </label>
-                    <textarea name="message" placeholder="Please enter your message"></textarea>
+                    <textarea name="message" placeholder="Please enter your message &#10048;"></textarea>
                     <br>
                     <!-- your other form fields go here -->
                     <button class="form-button" type="submit">Submit</button>
@@ -112,7 +126,7 @@
 
         <!--Footer section-->
         <footer>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" class="footer-link" target="_blank">The Tech Academy</a></p>
                 <br>
         </footer>
         <script src = "./js_1.js"></script>

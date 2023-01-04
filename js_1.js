@@ -23,7 +23,21 @@ function openNav() {
   }
   
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+  /*scroll effect*/
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fade-in').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+        });
+    });
+});
+  
