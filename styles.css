@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -67,19 +68,19 @@
 /* my custom css */
 
 .nav-Background {
-  background-color: #5b7ac7;
+  background-color: rgb(84, 84, 84);
 }
 
 .mytext, .myHref {
-  color: #5b7ac7;
+  color: #927e8f;
 }
 
 .myHref:hover {
-  color: #4167c7;
+  color: #a093a8;
 }
 
 .myicons:hover {
-  background-color: #4167c7 !important;
+  background-color: #a697b5 !important;
 }
 
 /* end of custom css */
@@ -257,11 +258,11 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #87387c;
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: #87387c;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
