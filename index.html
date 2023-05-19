@@ -10,28 +10,117 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Encode+Sans&family=Noto+Sans+Symbols:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
         <nav>
             <ul>
               <li><a href="#intro">Intro</a></li>
-              <li><a href="#about">About Me</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
+          <br><br>
           <div id="content">
-            <div class="bio-container">
-                <h2>About Me</h2>
-                <p id="typed-text"></p>
+            <div class="bio-container" id="intro">
+                <h4>-- HELLO WORLD</h4>
+                <p id="typed-text"> I am Janell Interiano, <br>Full Stack Software Engineer.</p>
+                <a href="https://www.linkedin.com/in/janellinteriano/" alt="linkedin" target="_blank"><i class="fa-brands fa-linkedin bio-icon"></i></a>
+                <a href="https://github.com/janellinteriano" alt="github" target="_blank"><i class="fa-brands fa-github bio-icon"></i></a>
+             </div>
+
+            <h5>-- SKILLS</h5>
+            <div class="skills-container">
+              <div class="skill-box">
+                <i class="fa-solid fa-laptop-code fa-7x skill-icon" style="color: #998096; margin-top: -2vh;"></i>
+                <p>Front end</p>
+                <ul>
+                  <li>▸ HTML</li>
+                  <li>▸ CSS</li>
+                  <li>▸ JavaScript</li>
+                  <li>▸ Bootstrap</li>
+                </ul>
               </div>
-              
+
+              <div class="skill-box">
+                <i class="fa-sharp fa-solid fa-database fa-7x skill-icon" style="color: #998096; margin-top: -2vh;"></i>
+                <p>Back end</p>
+                <ul>
+                  <li>▸ Python</li>
+                  <li>▸ C#</li>
+                  <li>▸ SQL</li>
+                  <li>▸ Django</li>
+                </ul>
+              </div>
+
+              <div class="skill-box">
+                <i class="fa-solid fa-toolbox fa-7x skill-icon" style="color: #998096; margin-top: -2vh;"></i>
+                <p>Tools</p>
+                <ul>
+                  <li>▸ Git</li>
+                  <li>▸ GitHub</li>
+                  <li>▸ VisualStudio</li>
+                  <li>▸ Azure Devops</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-box" id="about">
+              <div class="profile-img-box">
+                <img class="profile-img" src="./images/profile-pic.jpg">
+              </div>
+              <div class="myBio">
+                <p>-- ABOUT</p>
+                <h6>I am Janell Interiano. I am a full-stack engineer who is passionate about learning. I enjoy software development because problem-solving is a rewarding process for me. 
+                  <br><br>I gained my education from software development boot camp at the Tech Academy and am skilled in multiple programming languages such as: JavaScript, Python, C#, SQL, HTML and CSS. 
+                  I am always looking to learn new skills and overall become a better software engineer.</h6>
+              </div>
+            </div>
+
+            <div class="projects-box" id="projects">
+              <h1>Here are some of the projects I have built. Feel free to check them out!</h1>
+              <div class="projects-container">
+
+                <div class="project">
+                  <i class="fa-sharp fa-solid fa-bag-shopping project-icon"></i>
+                  <p>Ecommerce Website</p>
+                  <a href="https://github.com/janellinteriano/EcommerceWebsite-Project/tree/main_branch" target="_blank" alt="github"><i class="fa-brands fa-github github-icon"></i></a>
+                </div>
+
+                <div class="project">
+                  <i class="fa-sharp fa-solid fa-pen-to-square project-icon"></i>
+                  <p>Portfolio Website</p>
+                  <a href="https://github.com/janellinteriano/janellinteriano.github.io" target="_blank" alt="github"><i class="fa-brands fa-github github-icon"></i></a>
+                </div>
+
+                <div class="project">
+                  <i class="fa-solid fa-mug-hot project-icon"></i>
+                  <p>Coffee Shop Website</p>
+                  <a href="https://github.com/janellinteriano/HTML-and-CSS-Projects/tree/main/project" target="_blank" alt="github"><i class="fa-brands fa-github github-icon"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form-container" id="contact">
+              <form action="https://formspree.io/f/mkneookp" method="POST">
+                <h3>Get In Touch</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="phone" id="phone" placeholder="Your Phone Number" required>
+                <textarea id="message" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+
           </div>
-          
         <script src="scripts.js"></script>
     </body>
 </html>
