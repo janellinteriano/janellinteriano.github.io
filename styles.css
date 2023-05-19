@@ -1,10 +1,25 @@
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+.bio-icon {
+  font-size: 2rem;
+  padding: 10px;
+  margin-top: -10vh;
+  color:rgb(179, 93, 121)
+}
+
 nav {
+  top: 0;
+  left: 0;
+  position: fixed;
   height: 7lvh;
   background-color: rgb(27, 27, 27);
   transition: height 0.3s ease;
   display: flex; /* Added flexbox display */
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
+  margin-left: 15%;
 }
 
 nav ul {
@@ -15,40 +30,414 @@ nav ul {
 }
 
 nav li {
-  margin-right: 100px;
-  
+  margin: 0;
+  padding: 0%;
 }
 
 nav a {
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 1rem;
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 15vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 nav a:hover {
-  background-color: gray;
+  color: white;
+  background: rgba(77, 77, 77, 0.3);
 }
 
 #content {
-  height: 5000px; /* Replace with your desired height */
+  height: 4200px; /* Replace with your desired height */
 }
 .bio-container {
   display: flexbox;
-  text-align: center;
-  border: 2px solid black;
-  max-width: 35lvw;
-  margin-left: 30%;
+  text-align: start;
+  max-width: 70lvw;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-left: 5%;
+  margin-bottom: 20%;
 }
 
-h2 {
+.bio-container p {
+  font-family: 'DM Serif Display', serif;
+}
+
+h4 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: pink;
+  margin-right: 70%;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 #typed-text {
-  font-size: 18px;
-  color: #333;
+  font-size: 90px;
+  color: white;
 }
 
+h5 {
+  text-align: center;
+  font-size: 25px;
+  color: pink;
+  margin-right: 65%;
+  margin-bottom: 5%;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 15%;
+}
+
+.skill-box {
+  display: grid;
+  place-items: center;
+  margin-right: 10%;
+  background: rgba(77, 77, 77, 0.3);
+  height: 50vh;
+  width: 18vw;
+}
+
+.skill-box p {
+  font-size: 40px;
+  text-align: center;
+  margin-top: -12vh;
+  color: white;
+  font-family: 'Unna', serif;
+}
+
+ul {
+  margin-top: -20vh;
+  list-style: none;
+  margin-left: -25%;
+}
+
+ul li {
+  font-size: 20px;
+  font-family: 'Noto Sans Symbols', sans-serif;
+  color: lightgray;
+}
+
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12%;
+}
+
+.about-box .myBio h6 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Noto Sans Symbols', sans-serif;
+}
+
+.about-box .myBio p {
+  font-size: 25px;
+  color: pink;
+  margin-right: 70%;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.profile-img {
+  border: solid 2px black;
+  width: 550px;
+  height: 550px;
+}
+
+.myBio {
+  width: 600px;
+  margin-left: 5%;
+}
+
+.projects-box h1 {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  margin-bottom: 10%;
+  font-family: 'Unna', serif;
+  letter-spacing: 2px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container .project-icon {
+  font-size: 4rem;
+  color: lightblue;
+}
+
+.projects-container p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.project {
+  display: grid;
+  place-items: center;
+  background-color: rgb(68, 68, 68);
+  padding: 25px;
+  border: 1px solid;
+  border-radius: 12px;
+  margin-right: 5%;
+}
+
+.github-icon {
+  color: lightgray;
+  font-size: 1.5rem;
+}
+
+.form-container {
+  width: 700px;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+  margin-top: 18%;
+}
+
+form {
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 3vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h3 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'Unna', serif;
+  letter-spacing: 3px;
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: whitesmoke;
+  font-size: 16px;
+}
+
+form button {
+  padding: 15px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+form button:hover {
+  background-color: rgb(179, 93, 121);
+}
+
+
+@media all and (max-width: 600px) {
+  nav a {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  padding-left: 10px;
+  padding-right: 10vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+  .bio-container {
+    display: flexbox;
+    text-align: start;
+    max-width: 90lvw;
+    margin-top: 10%;
+    margin-left: 0;
+    padding-left: 5%;
+    margin-bottom: 50%;
+  }
+  h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: pink;
+    margin-right: 70%;
+  }
+  
+  #typed-text {
+    font-size: 35px;
+    color: white;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .skills-container {
+    margin-left: 2.5%;
+    margin-bottom: 50%;
+  }
+
+  .skill-box {
+    display: grid;
+    place-items: center;
+    margin-right: 3%;
+    background: rgba(77, 77, 77, 0.3);
+    height: 25vh;
+    width: 35vw;
+  }
+
+  .skill-box p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -7vh;
+    color: white;
+  }
+
+  ul {
+    margin-top: -10vh;
+    list-style: none;
+    margin-left: -40%;
+  }
+  
+  ul li {
+    font-size: 8px;
+    color: lightgray;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50%;
+  }
+  
+  .about-box .myBio h6 {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .about-box .myBio p {
+    font-size: 14px;
+    color: pink;
+    margin-right: 70%;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .myBio {
+    width: 300px;
+    margin-left: 5%;
+  }
+
+  .projects-box h1 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10%;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80vh;
+  }
+  
+  .projects-container .project-icon {
+    font-size: 2rem;
+    color: lightblue;
+  }
+  
+  .projects-container p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .project {
+    display: grid;
+    place-items: center;
+    background-color: rgb(68, 68, 68);
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  
+  .github-icon {
+    color: lightgray;
+    font-size: 1rem;
+  }
+
+  .form-container {
+    width: 350px;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 1vw;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  form h3 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+  
+  form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: whitesmoke;
+    font-size: 12px;
+  }
+  
+  form button {
+    padding: 15px;
+    background-color: palevioletred;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
+}
